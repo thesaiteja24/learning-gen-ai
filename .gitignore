@@ -68,3 +68,4 @@ reports/
 
 # API documentation tools
 swagger/
+.ipynb_checkpoints

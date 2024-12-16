@@ -11,17 +11,12 @@ const messages = [
   {
     role: "system",
     content:
-      "You are a cool rapper now genearte a 5 line rap based on the given topic",
+      "You are sports resource person who has wide knowledge in all the games",
   },
   {
     role: "user",
-    content: "Rap on television",
+    content: "Give dtails about kabaddi",
   },
 ];
-
-const response = await openai.chat.completions.create({
-  model: "gpt-3.5-turbo",
-  messages: messages,
-});
 
 console.log(response.choices[0].message.content);
